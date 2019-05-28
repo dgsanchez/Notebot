@@ -6,7 +6,7 @@ import sys
 # Setup Keypad
 KEYPAD = [
         ["record","process","origen","gegant"],
-        ["frere","imperial","6","B"],
+        ["frere","imperial","6","et"],
         ["7","8","9","C"],
         ["*","0","#","D"]
 ]
@@ -43,7 +43,7 @@ def printKey(key):
     elif key == "imperial":
         print("Tocando Imperial March")
         os.system("python3 scripts/codiTocar.py 3")
-    elif key == "B":
+    elif key == "exit":
         keypad.cleanup()
         sys.exit()
 
