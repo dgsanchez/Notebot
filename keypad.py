@@ -6,7 +6,7 @@ import sys
 # Setup Keypad
 KEYPAD = [
         ["record","process","origen","gegant"],
-        ["frere","imperial","6","et"],
+        ["frere","imperial","6","exit"],
         ["7","8","9","C"],
         ["*","0","#","D"]
 ]
