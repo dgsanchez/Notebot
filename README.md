@@ -22,7 +22,9 @@ Contains various arrays of midi notes, along with the duration of each, which ar
 
 Detection of musical notes in a .WAV file, previously recorded by a person through the microphone.
 
+## Funcions.py
 
+Contains the basic functions for playing a note and a song, these functions are called from other scripts in the project, like CodiTocar.py
 
 Project for the RLP subject at Universitat Autònoma de Barcelona.
 
