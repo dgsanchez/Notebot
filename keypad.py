@@ -5,8 +5,8 @@ import sys
 
 # Setup Keypad
 KEYPAD = [
-        ["record","2","3","A"],
-        ["4","5","6","B"],
+        ["record","process","origen","gegant"],
+        ["frere","imperial","6","B"],
         ["7","8","9","C"],
         ["*","0","#","D"]
 ]
@@ -29,18 +29,18 @@ def printKey(key):
         print("Estas grabando un audio")
         os.system("arecord -d 5 --device=plughw:1,0 --format S16_LE --rate 44100 -c1 test.wav")
         print("Grabación finalizada")
-    elif key == "2":
+    elif key == "process":
         os.system("python3 scripts/note_detector.py test.wav")
-    elif key == "3":
+    elif key == "origen":
         print("ejecutando servosOrigen.py")
         os.system("python3 scripts/servosOrigen.py")
-    elif key == "A":
+    elif key == "gegant":
         print("Tocando el Gegant del Pi")
         os.system("python3 scripts/codiTocar.py 1")
-    elif key == "4":
+    elif key == "frere":
         print("Tocando Frere Jacques")
         os.system("python3 scripts/codiTocar.py 2")
-    elif key == "5":
+    elif key == "imperial":
         print("Tocando Imperial March")
         os.system("python3 scripts/codiTocar.py 3")
     elif key == "B":
